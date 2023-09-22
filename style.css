@@ -10,7 +10,11 @@
 body
 {
     font-family: "Poppins", sans-serif;
-    background-color: #333;
+   
+}
+::selection
+{
+    background-color: #0b372dbb;
 }
 
 .logo
@@ -18,9 +22,14 @@ body
     width: 100px;
 }
 
-.header
+header
 {
+    position: absolute;
+    z-index: 9999;
     width: 100%;
+    padding: 0.9rem 0;
+    top: 0;
+    left: 0;
     border-bottom: 1px solid rgb(255, 255, 255, 0.1);
 }
 
@@ -105,3 +114,239 @@ header>nav>ul>li>a
 }
 
 /*nav bar css done*/
+
+main 
+{
+position: relative;
+   height: 100vh;
+   width: 100vw;
+   overflow: hidden;
+}
+
+.bg-img
+{
+    position: absolute;
+    z-index: 1;
+    width: 2800px;
+    top: calc(50% - 390px);
+    left: calc(50% + 10px);
+    
+}
+.fog-7
+{
+    position: absolute;
+    z-index: 2;
+    width: 1900px;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+    
+}
+.mountain-10
+{
+    position: absolute;
+    z-index: 3;
+    width: 892px;
+    top: calc(50% + 69px);
+    left: calc(50% + 230px);
+    
+}
+.fog-6
+{
+    position: absolute;
+    z-index: 4;
+    width: 1610px;
+    top: calc(50% + 85px);
+    left: calc(50% + 10px);
+    
+}
+.mountain-9
+{
+    position: absolute;
+    z-index: 5;
+    width: 892px;
+    top: calc(50% + 113px);
+    left: calc(50% + 230px);
+    
+}
+.mountain-8
+{
+    position: absolute;
+    z-index: 6;
+    width: 892px;
+    top: calc(50% + 86px);
+    left: calc(50% + 202px);
+    
+}
+.fog-5
+{
+    position: absolute;
+    z-index: 7;
+    width: 450px;
+    top: calc(50% + 160px);
+    left: calc(50% + 20px);
+    
+}
+.mountain-7
+{
+    position: absolute;
+    z-index: 8;
+    width: 538px;
+    top: calc(50% + 123px);
+    left: calc(50% + 305px);
+    
+}
+.text
+{
+    position: absolute;
+    z-index: 9;
+    top: calc(50% - 110px);
+    left: 50%;
+    
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+.text h2
+{
+    font-weight: 100;
+    font-size: 6.5rem;
+    line-height: 0.88;
+    pointer-events: auto;
+}
+.text h1
+{
+    font-weight: 800;
+    font-size: 8rem;
+    line-height: 0.88;
+    pointer-events: auto;
+}
+.mountain-6
+{
+    position: absolute;
+    z-index: 10;
+    width: 408px;
+    top: calc(50% + 60px);
+    left: calc(50% + 590px);
+    
+}
+.fog-4
+{
+    position: absolute;
+    z-index: 11;
+    width: 590px;
+    top: calc(50% + 223px);
+    left: calc(50% - 60px);
+    
+}
+.mountain-5
+{
+    position: absolute;
+    z-index: 12;
+    width: 408px;
+    top: calc(50% + 250px);
+    left: calc(50% + 138px);
+    
+}
+.fog-3
+{
+    position: absolute;
+    z-index: 13;
+    width: 1600px;
+    top: calc(50% + 110px);
+    left: calc(50% - 15px);
+    
+}
+.mountain-4
+{
+    position: absolute;
+    z-index: 14;
+    width: 780px;
+    top: calc(50% + 196px);
+    left: calc(50% - 380px);
+    
+}
+.mountain-3
+{
+    position: absolute;
+    z-index: 15;
+    width: 600px;
+    top: calc(50% + 50px);
+    left: calc(50% + 700px);
+    
+}
+
+.fog-2
+{
+    position: absolute;
+    z-index: 16;
+    width: 1560px;
+    top: calc(50% + 147px);
+    left: calc(50% - 80px);
+    
+    
+}
+.mountain-2
+{
+    position: absolute;
+    z-index: 17;
+    width: 690px;
+    top: calc(50% + 154px);
+    left: calc(50% + 412px);
+    
+    
+}
+.mountain-1
+{
+    position: absolute;
+    z-index: 18;
+    width: 530px;
+    top: calc(50% + 17px);
+    left: calc(50% - 800px);
+    
+    
+}
+.sun-rays
+{
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 595px;
+    pointer-events: none;
+}
+.black-shadow
+{
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+}
+.fog-1
+{
+    position: absolute;
+    z-index: 21;
+    width: 1600px;
+    top: calc(100% - 500px);
+    left: 50%;
+    
+    
+}
+.parallax
+{
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+.vignette
+{
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: radial-gradient(ellipse  at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
+    pointer-events: none;
+}
