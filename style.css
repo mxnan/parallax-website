@@ -117,18 +117,23 @@ header>nav>ul>li>a
 
 main 
 {
-position: relative;
+   position: relative;
    height: 100vh;
    width: 100vw;
    overflow: hidden;
+}
+.parallax
+{
+    pointer-events: none;
+    transition: 0.75s cubic-bezier(0.2,0.49,0.32,0.99);
 }
 
 .bg-img
 {
     position: absolute;
     z-index: 1;
-    width: 2800px;
-    top: calc(50% - 390px);
+    width: 3400px;
+    top: calc(50% - 350px);
     left: calc(50% + 10px);
     
 }
@@ -154,9 +159,9 @@ position: relative;
 {
     position: absolute;
     z-index: 4;
-    width: 1610px;
-    top: calc(50% + 85px);
-    left: calc(50% + 10px);
+    width: 1900px;
+    top: calc(50% + 200px);
+    left: calc(50% + 500px);
     
 }
 .mountain-9
@@ -164,34 +169,34 @@ position: relative;
     position: absolute;
     z-index: 5;
     width: 892px;
-    top: calc(50% + 113px);
-    left: calc(50% + 230px);
+    top: calc(50% + 500px);
+    left: calc(50% - 400px);
     
 }
 .mountain-8
 {
     position: absolute;
     z-index: 6;
-    width: 892px;
-    top: calc(50% + 86px);
-    left: calc(50% + 202px);
+    width: 900px;
+    top: calc(50% + 120px);
+    left: calc(50% - 200px);
     
 }
 .fog-5
 {
     position: absolute;
     z-index: 7;
-    width: 450px;
+    width: 1600px;
     top: calc(50% + 160px);
-    left: calc(50% + 20px);
+    left: calc(50% + 200px);
     
 }
 .mountain-7
 {
     position: absolute;
     z-index: 8;
-    width: 538px;
-    top: calc(50% + 123px);
+    width: 800px;
+    top: calc(50% + 250px);
     left: calc(50% + 305px);
     
 }
@@ -199,7 +204,7 @@ position: relative;
 {
     position: absolute;
     z-index: 9;
-    top: calc(50% - 110px);
+    top: calc(50% - 130px);
     left: 50%;
     
     text-align: center;
@@ -212,29 +217,29 @@ position: relative;
     font-weight: 100;
     font-size: 6.5rem;
     line-height: 0.88;
-    pointer-events: auto;
+    
 }
 .text h1
 {
     font-weight: 800;
     font-size: 8rem;
     line-height: 0.88;
-    pointer-events: auto;
+    
 }
 .mountain-6
 {
     position: absolute;
     z-index: 10;
     width: 408px;
-    top: calc(50% + 60px);
-    left: calc(50% + 590px);
+    top: calc(50% + 100px);
+    left: calc(50% + 600px);
     
 }
 .fog-4
 {
     position: absolute;
     z-index: 11;
-    width: 590px;
+    width: 1600px;
     top: calc(50% + 223px);
     left: calc(50% - 60px);
     
@@ -244,17 +249,17 @@ position: relative;
     position: absolute;
     z-index: 12;
     width: 408px;
-    top: calc(50% + 250px);
-    left: calc(50% + 138px);
+    top: calc(50% + 350px);
+    left: calc(50% - 20px);
     
 }
 .fog-3
 {
     position: absolute;
     z-index: 13;
-    width: 1600px;
-    top: calc(50% + 110px);
-    left: calc(50% - 15px);
+    width: 2400px;
+    top: calc(50% + 100px);
+    left: calc(50% - 20px);
     
 }
 .mountain-4
@@ -262,17 +267,17 @@ position: relative;
     position: absolute;
     z-index: 14;
     width: 780px;
-    top: calc(50% + 196px);
-    left: calc(50% - 380px);
+    top: calc(50% + 210px);
+    left: calc(50% - 400px);
     
 }
 .mountain-3
 {
     position: absolute;
     z-index: 15;
-    width: 600px;
-    top: calc(50% + 50px);
-    left: calc(50% + 700px);
+    width: 700px;
+    top: calc(50% + 10px);
+    left: calc(50% + 800px);
     
 }
 
@@ -280,7 +285,7 @@ position: relative;
 {
     position: absolute;
     z-index: 16;
-    width: 1560px;
+    width: 1900px;
     top: calc(50% + 147px);
     left: calc(50% - 80px);
     
@@ -291,8 +296,8 @@ position: relative;
     position: absolute;
     z-index: 17;
     width: 690px;
-    top: calc(50% + 154px);
-    left: calc(50% + 412px);
+    top: calc(50% + 200px);
+    left: calc(50% + 370px);
     
     
 }
@@ -300,9 +305,9 @@ position: relative;
 {
     position: absolute;
     z-index: 18;
-    width: 530px;
-    top: calc(50% + 17px);
-    left: calc(50% - 800px);
+    width: 700px;
+    top: calc(50% + 10px);
+    left: calc(50% - 850px);
     
     
 }
@@ -319,7 +324,7 @@ position: relative;
 {
     position: absolute;
     z-index: 20;
-    top: 0;
+    bottom: 0;
     right: 0;
     width: 100%;
     pointer-events: none;
@@ -329,16 +334,12 @@ position: relative;
     position: absolute;
     z-index: 21;
     width: 1600px;
-    top: calc(100% - 500px);
-    left: 50%;
+    top: calc(100% - 355px);
+    left: calc(50% + 200px);
     
     
 }
-.parallax
-{
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-}
+
 .vignette
 {
     position: absolute;
@@ -347,6 +348,6 @@ position: relative;
     height: 100%;
     top:0;
     left: 0;
-    background-color: radial-gradient(ellipse  at center, rgba(0,0,0,0) 65%, rgba(0,0,0,0.7));
+    background-color: radial-gradient(ellipse  at center, rgba(0,0,0,0) 70%, rgba(0,0,0,0.7));
     pointer-events: none;
 }
